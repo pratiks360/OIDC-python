@@ -52,7 +52,8 @@ python main.py          # http://127.0.0.1:8080
 
 ## 🔒 Security Notes
 
-- `client_secrets.json` and the Flask `SECRET_KEY` in `main.py` are demo placeholders — load real ones from environment variables or an untracked file.
+- `client_secrets.json` is no longer committed; create it locally from your provider's client settings.
+- Flask's `SECRET_KEY` comes from the `SECRET_KEY` environment variable (falls back to `change-me` for local demos only).
 - `DEBUG` and non-secure cookies are on; this is a local demo, not a deployment template.
 
 ## 🛠️ Tech Stack
